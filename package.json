@@ -1,9 +1,9 @@
 {
-  "name": "feature-flag-util",
-  "version": "1.0.5",
-  "description": "Feature flag utils to handle whitelist or percentage",
-  "main": "./dist/feature-flag.util.js",
-  "types": "./dist/feature-flag.util.d.ts",
+  "name": "message-emitter",
+  "version": "1.0.0",
+  "description": "Execute functions estimulated by events",
+  "main": "./dist/message-emitter.js",
+  "types": "./dist/message-emitter.d.ts",
   "directories": {
     "lib": "dist"
   },
@@ -26,18 +26,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasliet/feature-flag-utils.git"
+    "url": "git+https://github.com/lucasliet/message-emitter.git"
   },
   "keywords": [
-    "feature-flag",
-    "feature",
-    "flag"
+    "event-emitter",
+    "event",
+    "emitter",
+    "observable",
+    "event driven",
+    "pubsub",
+    "publisher",
+    "subscriber"
   ],
   "author": "lucasliet <lucasouliveira@gmail.com>",
   "license": "MIT",
   "private": false,
   "bugs": {
-    "url": "https://github.com/lucasliet/feature-flag-utils/issues"
+    "url": "https://github.com/lucasliet/message-emitter/issues"
   },
-  "homepage": "https://github.com/lucasliet/feature-flag-utils#readme"
+  "homepage": "https://github.com/lucasliet/message-emitter#readme"
 }

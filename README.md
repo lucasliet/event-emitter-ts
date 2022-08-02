@@ -1,29 +1,29 @@
-# Feature Flag Util
-Utilities functions to deal with feature flags.
+# Message Emitter
+Execute functions estimulated by events.
 
 ## installation
 ```SH
-yarn add feature-flag-util
+yarn add message-emitter
 ```
 
 ## usage
 
 ```TS
-import * as FeatureFlag from 'feature-flag-util';
+import * as Emitter from 'message-emitter';
 
 const whitelistedCompanies = ['012345678910234', '432019876543210'];
 
-FeatureFlag.isCompanyListed(whitelistedCompanies, '012345678910234'); // returns true
+Emitter.publish('test', 1, 2, 3 ,4 ); // pulish to topic 'test' the args 1, 2, 3, 4 
 
-FeatureFlag.isCompanyListed(whitelistedCompanies, '654321043201987'); // returns false
+Emitter.subscribe('test', args => console.log(args)); // if the topic was published execute callback function to given arguments
 
-FeatureFlag.isCompanyListedAsNumber(whitelistedCompanies, 12345678910234); // returns true
+Emitter.deleteTopic('test'); // remove topic
 
-FeatureFlag.isRandomInPercentage(50); // returns true if random number generated is less than 50 otherwise, false
+Emitter.hasTopic('test'); // returns true if topic exists, otherwise false
 ```
 
 > ℹ for JavaScript <= es5 use require
 ```JS
-var FeatureFlag = require('feature-flag-util');
-var result = FeatureFlag.isRandomInPercentage(50);
+var Emitter = require('message-emitter');
+Emitter.publish('test', 1, 2, 3 ,4 );
 ```

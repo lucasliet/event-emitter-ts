@@ -1,6 +1,5 @@
 /node_modules/
 /coverage/
-/tests/
 /*.js
 /tsconfig.json
 /yarn.lock
