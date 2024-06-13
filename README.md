@@ -11,8 +11,6 @@ yarn add message-emitter
 ```TS
 import * as Emitter from 'message-emitter';
 
-const whitelistedCompanies = ['012345678910234', '432019876543210'];
-
 Emitter.publish('test', 1, 2, 3 ,4 ); // pulish to topic 'test' the args 1, 2, 3, 4 
 
 Emitter.subscribe('test', args => console.log(args)); // if the topic was published execute callback function to given arguments

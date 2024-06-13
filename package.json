@@ -1,6 +1,6 @@
 {
   "name": "message-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Execute functions estimulated by events",
   "main": "./dist/message-emitter.js",
   "types": "./dist/message-emitter.d.ts",
